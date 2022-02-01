@@ -11,10 +11,10 @@
 WordStats initStats(WordStats st)
 {
 	// TODO initialize all fields in the st struct before returning it
-	//int histo[ALPHABET_SIZE];
-	//int wordCount = 0;
-	//int vowelCount = 0;
-	//int consonantCount = 0;
+	int histo[ALPHABET_SIZE];
+	int wordCount = 0;
+	int vowelCount = 0;
+	int consonantCount = 0;
 	return st;
 }
 
@@ -26,18 +26,21 @@ WordStats initStats(WordStats st)
  */
 WordStats updateVowelCons(WordStats st, const char str[])
 {
-	// int vowelCountT = 0;
-	// int conCount = 0;
+	int vowelCountT = 0;
+	int conCount = 0;
 
-	// int i;
-	// for (i = 0; i < strlen(str); i++)
-	// {
-	// 	if(str[i] == 'a' || str[i] == 'A' || str[i] == 'e' || str[i] == 'E' || str[i] == 'i' || str[i] == 'I' || str[i] == 'o' ||str[i] == 'O' || str[i] == 'u' ||str[i] == 'U'){
-	// 		vowelCountT++;
-	// 	}
-	// }
+	int i;
+	for (i = 0; i < strlen(str); i++)
+	{
+		if(str[i] == 'a' || str[i] == 'A' || str[i] == 'e' || str[i] == 'E' || str[i] == 'i' || str[i] == 'I' || str[i] == 'o' ||str[i] == 'O' || str[i] == 'u' ||str[i] == 'U'){
+			vowelCountT++;
+		}else 
+			conCount++;
+		}
+	}
 	
-	// st.vowelCount = vowelCountT;
+	st.vowelCount = vowelCountT;
+	st.
 	
 	return st;
 }

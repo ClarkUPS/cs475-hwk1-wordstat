@@ -15,9 +15,7 @@ int getMenuOption()
 	printf("Enter 5 to quit.\n");
 
 	int option;
-	scanf("%d" , &option);
-
-	printf("%d\n",option);
+	
 	
 	return option;
 }
