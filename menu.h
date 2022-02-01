@@ -17,5 +17,6 @@
 
 //function declarations
 int getMenuOption();
+//int printVowel()
 
 #endif /* MENU_H_ */
